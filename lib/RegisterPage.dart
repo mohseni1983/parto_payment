@@ -18,6 +18,7 @@ class _RegisterState extends State<Register> {
     return Directionality(textDirection: TextDirection.rtl,
         child:
     Scaffold(
+      backgroundColor: Colors.black,
       body: Center(
         child: Container(
           height: 350,
@@ -91,7 +92,7 @@ class _RegisterState extends State<Register> {
               showSubmitBtn?
               GFButton(
                   color: Colors.deepOrange,
-                  child: Text('ارسال کد',style: TextStyle(color: Colors.black),),
+                  child: Text('ارسال کد',style: TextStyle(color: Colors.black,fontFamily: 'Samim',fontWeight: FontWeight.w900),),
                   shape: GFButtonShape.pills,
                   size: GFSize.LARGE,
                   fullWidthButton: true,

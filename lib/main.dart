@@ -12,7 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.dark(
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColorDark: Colors.black,
+        backgroundColor: Colors.black,
+        fontFamily: 'Samim',
+
 
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -50,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage>  with TickerProviderStateMixin{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.black,
       
       body: Center(
         child: Container(
